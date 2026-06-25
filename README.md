@@ -8,7 +8,7 @@ their own words (*receipts*), and turns the top signal into a ready-to-sell prod
 with a price, listing copy, a **real trackable link**, and a UPI checkout page.
 A disclosed AI **Clone** then replies to the fans who asked — in their own language.
 
-Built for Hackfluence 2026 · Team Mew (Akansha Mishra · Ananya Singh).
+
 
 ---
 
@@ -118,7 +118,7 @@ Then everything (UI, API, links, buyer pages) is on `http://localhost:8000`.
 | `ECHO_CREATOR_NAME` | Name shown on the buyer page. |
 | `ECHO_PUBLIC_BASE` | Public URL for links in production. |
 
-## Roadmap (post-hackathon)
+## Roadmap->
 
 - OCR ingestion for DM screenshots (Tesseract) — stubbed by the upload endpoint today
 - Embeddings-based clustering for scale beyond a single LLM pass
