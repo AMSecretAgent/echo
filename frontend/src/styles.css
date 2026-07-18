@@ -1,0 +1,140 @@
+:root {
+  --bg: #faf8f3;
+  --ink: #1c1a17;
+  --muted: #6b6558;
+  --accent: #2e6f5e;
+  --card: #ffffff;
+  --border: #e5e0d5;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.dashboard {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+}
+
+.dashboard__header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 4px;
+}
+
+.dashboard__tagline {
+  color: var(--muted);
+  margin-top: 0;
+}
+
+.dashboard__input {
+  margin: 24px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.dashboard__input textarea {
+  font: inherit;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  resize: vertical;
+}
+
+.dashboard__input button {
+  align-self: flex-start;
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font: inherit;
+  cursor: pointer;
+}
+
+.dashboard__input button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.dashboard__error {
+  color: #b3382c;
+}
+
+.agent-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.agent-card {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 16px;
+  background: var(--card);
+}
+
+.agent-card--running { border-color: var(--accent); }
+.agent-card--done { border-color: #1a8a3a55; }
+.agent-card--failed { border-color: #b3382c55; }
+
+.agent-card__header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+}
+
+.agent-card__status {
+  margin-left: auto;
+  font-size: 0.8rem;
+  color: var(--muted);
+  text-transform: capitalize;
+}
+
+.agent-card__output {
+  margin-top: 8px;
+  font-size: 0.8rem;
+  background: #f3f1ea;
+  padding: 10px;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+.score-gauge {
+  text-align: center;
+  margin: 24px 0;
+}
+
+.score-gauge__value {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.score-gauge__max {
+  font-size: 1rem;
+  color: var(--muted);
+}
+
+.score-gauge__label {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.report__section {
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.report__empty {
+  color: var(--muted);
+  font-style: italic;
+}
